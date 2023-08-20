@@ -1,0 +1,9 @@
+import express  from 'express';
+import { UserController } from './user.controller';
+const router = express.Router()
+
+router.post('/create-user',UserController.insertIntoDb)
+router.post('/profile',UserController.insertOrUpdateProfile)
+router.get('/',UserController.getUsers)
+router.get('/:id',UserController.getSingleUsers)
+export const userRoute = router;
