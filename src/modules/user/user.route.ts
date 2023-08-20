@@ -6,4 +6,4 @@ router.post('/create-user',UserController.insertIntoDb)
 router.post('/profile',UserController.insertOrUpdateProfile)
 router.get('/',UserController.getUsers)
 router.get('/:id',UserController.getSingleUsers)
-export const userRoute = router;
+export const userRoutes = router;
